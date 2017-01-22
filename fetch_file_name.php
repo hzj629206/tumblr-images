@@ -12,8 +12,9 @@ function main() {
     !isset($_GET['url']) && exit_script('Hello Tumblr OneDrive for Business FileName!');
 
 	$filename = parse_url($_GET['url'], PHP_URL_PATH);
-	$filename = str_replace("/", "", $filename);
-	$filename = str_replace(":", "", $filename);
+	$filename = str_replace("/", "_", $filename);
+	$filename = str_replace(":", "_", $filename);
+	$filename = str_replace(",", "_", $filename);
 	echoTxt($filename) && exit_script();
 }
 
