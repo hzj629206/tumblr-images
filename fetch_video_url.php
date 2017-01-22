@@ -9,7 +9,7 @@
 main();
 
 function main() {
-    !isset($_GET['url']) && exit_script('Hello Tumblr!');
+    !isset($_GET['url']) && exit_script('Hello Tumblr Video Url!');
 
     $query_param = get_query_param($_GET['url']);
     !$query_param && echoTxt("NOT VALID TUMBLR URL: [{$_GET['url']}]") && exit_script();
