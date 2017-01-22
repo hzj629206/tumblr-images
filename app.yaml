@@ -7,3 +7,6 @@ handlers:
 
 - url: /.*
   script: fetch.php
+  
+- url: /fetch_video_url.php
+  script: fetch_video_url.php
