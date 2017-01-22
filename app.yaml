@@ -4,9 +4,9 @@ threadsafe: true
 handlers:
 - url: /test\.php.*
   script: test.php
+  
+- url: /fetch_video_url\.php
+  script: fetch_video_url.php
 
 - url: /.*
   script: fetch.php
-  
-- url: /fetch_video_url.php
-  script: fetch_video_url.php
