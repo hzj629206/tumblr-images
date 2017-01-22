@@ -9,7 +9,7 @@ Simple PHP Script run on Google Application Engine for ifttt, handling tumblr li
 4. On the command line interface:
 
   ```
-  git clone git@github.com:hzj629206/tumblr-images.git
+  git clone https://github.com/hzj629206/tumblr-images.git
   cd tumblr-images
   gcloud preview app deploy ./app.yaml --promote
   ```
