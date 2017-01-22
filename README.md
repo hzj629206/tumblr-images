@@ -3,6 +3,19 @@ tumblr-images
 
 Simple PHP Script run on Google Application Engine for ifttt, handling tumblr liked posts, return post image to Dropbox or Google Drive.
 
+1. Register Google App Engine.
+2. Create an app, when finished, enter https://console.cloud.google.com.
+3. Switch to your app at right top corner, click Active Google Cloud Shell.
+4. On the command line interface:
+
+  ```
+  git clone git@github.com:hzj629206/tumblr-images.git
+  cd tumblr-images
+  gcloud preview app deploy ./app.yaml --promote
+  ```
+
+5. Go to the URL that command prompted you, if there something like 'hello' shows up, you are good to go for configuring IFTTT.
+
 finding for a way to download images urls whose inside txts?
 
 1. get aria2c.exe from http://aria2.sourceforge.net/
