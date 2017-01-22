@@ -11,7 +11,7 @@ Simple PHP Script run on Google Application Engine for ifttt, handling tumblr li
   ```
   git clone https://github.com/hzj629206/tumblr-images.git
   cd tumblr-images
-  gcloud preview app deploy ./app.yaml --promote
+  gcloud app deploy ./app.yaml --promote
   ```
 
 5. Go to the URL that command prompted you, if there something like 'hello' shows up, you are good to go for configuring IFTTT.
